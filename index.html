@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- Vanilla css -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- tailwindcss  -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Daisy UI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class=" ">
+  <header class="header-section container mx-auto border h-80">
+    <h1 class="header-title text-5xl text-center my-16">
+      Select Your Best Five
+    </h1>
+
+    <p class="text-center">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+      <br />
+      sint. Velit officia consequat duis enim velit mollit. Exercitation
+      <br />
+      veniam consequat sunt nostrud amet.
+    </p>
+  </header>
+
+  <main>
+
+    <section class="container w-full mx-auto  my-12">
+
+      <div class="grid grid-cols-2 gap-8">
+
+
+        <!-- player  -->
+        <div>
+          <div class="grid grid-cols-3 gap-4">
+
+            <div class="card w-full bg-stone-900 shadow-xl">
+              <figure><img src="images/Messi.png" alt="Shoes" class="w-full h-40" /></figure>
+              <div class="card-body">
+                <div>
+                 <div>
+                  <h2 class="card-title justify-center text-stone-50">Lionel Messi</h2>
+                 </div>
+                  <p class=" mt-2 text-center text-stone-50">36 Goals <br> PSG</p>
+                </div>
+                <div class="card-actions mt-4 justify-center">
+                  <button  class="btn btn-primary w-44 mx-auto"  onclick="selectToCart(this)">SELECT</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card w-full bg-stone-900 shadow-xl">
+              <figure><img src="images/Nymer.png" alt="Shoes" class="w-full h-40" /></figure>
+              <div class="card-body">
+                <div>
+                  <div><h2 class="card-title justify-center text-stone-50">Neymar Jr</h2></div>
+                  <p class=" mt-2 text-center text-stone-50">36 Goals <br> PSG</p>
+                </div>
+                <div class="card-actions mt-4 justify-center">
+                  <button class="btn btn-primary w-44 mx-auto" onclick="selectToCart(this)">SELECT</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card w-full bg-stone-900 shadow-xl">
+              <figure><img src="images/Mbappe.png" alt="Shoes" class="w-full h-40" /></figure>
+              <div class="card-body">
+                <div>
+                 <div> <h2 class="card-title justify-center text-stone-50">Kylian Mbappé</h2></div>
+                  <p class=" mt-2 text-center text-stone-50">36 Goals <br> PSG</p>
+                </div>
+                <div class="card-actions mt-4 justify-center">
+                  <button class="btn btn-primary w-44 mx-auto" onclick="selectToCart(this)">SELECT</button>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="card w-full bg-stone-900 shadow-xl">
+              <figure><img src="images/Vítor Machado.png" alt="Shoes" class="w-full h-40" /></figure>
+              <div class="card-body">
+                <div>
+                 <div> <h2 class="card-title justify-center text-stone-50">Vítor Machado</h2></div>
+                  <p class=" mt-2 text-center text-stone-50">36 Goals <br> PSG</p>
+                </div>
+                <div class="card-actions mt-4 justify-center">
+                  <button class="btn btn-primary w-44 mx-auto" onclick="selectToCart(this)">SELECT</button>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card w-full bg-stone-900 shadow-xl">
+              <figure><img src="images/Sergio Ramos.png" alt="Shoes" class="w-full h-40" /></figure>
+              <div class="card-body">
+                <div>
+                 <div> <h2 class="card-title justify-center text-stone-50">Sergio Ramos</h2></div>
+                  <p class=" mt-2 text-center text-stone-50">36 Goals <br> PSG</p>
+                </div>
+                <div class="card-actions mt-4 justify-center">
+                  <button class="btn btn-primary w-44 mx-auto" onclick="selectToCart(this)">SELECT</button>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card w-full bg-stone-900 shadow-xl">
+              <figure><img src="images/Renato Sanches.png" alt="Shoes" class="w-full h-40" /></figure>
+              <div class="card-body">
+                <div>
+                  <div><h2 class="card-title justify-center text-stone-50"> Sanches</h2></div>
+                  <p class=" mt-2 text-center text-stone-50">36 Goals <br> PSG</p>
+                </div>
+                <div class="card-actions mt-4 justify-center">
+                  <button class="btn btn-primary w-44 mx-auto" onclick="selectToCart(this)">SELECT</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- player end  -->
+
+
+        <!-- Selected Player -->
+
+        <div class="mx-12 ">
+
+
+          <div class="grid grid-cols-1 w-full">
+            <h1 class="text-3xl text-center">Selected Player</h1>
+
+            <div class="flex flex-col w-full ">
+              <div class="divider"></div>
+            </div>
+            
+
+            <div id="player-container" class="h-80  ">
+              
+
+
+
+
+
+
+            </div>
+
+          </div>
+
+
+
+
+
+
+          <!-- Club Budget -->
+  
+          <div>
+
+            <div class="text-2xl text-center my-4">
+              <h1 class="text-3xl text-center my-8"> Club Budget</h1>
+            </div>
+
+
+            <div class="flex  ">
+              <p class=" my-3 mx-3">Per Player</p> <input type="number" placeholder=""
+                class="input input-bordered input-success w-60 max-w-xs" />
+            </div>
+            <button id="Calculate-btn" class="btn btn-primary w-60 mx-24 my-4 ">Calculate</button>
+
+            <div class="flex ">
+              <p class="mx-4">Player Expenses </p>
+
+              <p class="mx-6">$<span>00</span></p>
+            </div>
+            <div class="flex my-4 ">
+              <p class=" my-3 mx-4">Manager</p> <input type="number" placeholder=""
+                class="input input-bordered input-success w-60 max-w-xs" />
+            </div>
+
+            <div class="flex my-4 ">
+              <p class="  mx-4">Coach</p> <input type="number" placeholder=""
+                class="input input-bordered input-success mx-4 my-2 w-60 max-w-xs" />
+            </div>
+            <button class="btn btn-primary w-60 mx-24  ">Calculate- Total</button>
+
+            <div class="flex justify-between ">
+              <div>
+                <h1 class="my-4 mx-4 ">Total</h1>
+              </div>
+              <p class="my-4 me-4 ">$<span>00</span></p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/utilities.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
