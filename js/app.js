@@ -8,7 +8,7 @@ const playerCart =[]
 
 
 
-const Calculate=document.getElementById("Calculate-btn").addEventListener("onClik")
+
 
 
 
@@ -41,7 +41,7 @@ if(i <= 4){
 }
 
 else{
-    alert("invalid")
+    alert(" Hey Buddy ---You Can Select Only Five Players")
 }
     
 }
