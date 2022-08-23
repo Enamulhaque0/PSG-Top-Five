@@ -136,7 +136,7 @@
 
 
           <div class="grid grid-cols-1 w-full">
-            <h1 class="text-3xl text-center">Selected Player <span id="seleted-player">0</span></h1>
+            <h1 class="text-3xl text-center">Selected Five Players</h1>
 
             <div class="flex flex-col w-full ">
               <div class="divider"></div>
@@ -171,31 +171,31 @@
 
             <div class="flex  ">
               <p class=" my-3 mx-3">Per Player</p> <input type="number" placeholder=""
-                class="input input-bordered input-success w-60 max-w-xs" />
+                class="input input-bordered input-success w-60 max-w-xs" id="per-player" />
             </div>
             <button id="Calculate-btn" class="btn btn-primary w-60 mx-24 my-4 ">Calculate</button>
 
             <div class="flex ">
               <p class="mx-4">Player Expenses </p>
 
-              <p class="mx-6">$<span>00</span></p>
+              <p class="mx-6">$<span id="player-Expense">00</span></p>
             </div>
             <div class="flex my-4 ">
               <p class=" my-3 mx-4">Manager</p> <input type="number" placeholder=""
-                class="input input-bordered input-success w-60 max-w-xs" />
+                class="input input-bordered input-success w-60 max-w-xs" id="manager"/>
             </div>
 
             <div class="flex my-4 ">
               <p class="  mx-4">Coach</p> <input type="number" placeholder=""
-                class="input input-bordered input-success mx-4 my-2 w-60 max-w-xs" />
+                class="input input-bordered input-success mx-4 my-2 w-60 max-w-xs" id="coach" />
             </div>
-            <button class="btn btn-primary w-60 mx-24  ">Calculate- Total</button>
+            <button id="calculate-total" class="btn btn-primary w-60 mx-24  ">Calculate- Total</button>
 
             <div class="flex justify-between ">
               <div>
                 <h1 class="my-4 mx-4 ">Total</h1>
               </div>
-              <p class="my-4 me-4 ">$<span>00</span></p>
+              <p class="my-4 me-4 ">$<span id="total">00</span></p>
             </div>
 
           </div>
@@ -207,7 +207,9 @@
   </main>
 
   <script src="js/utilities.js"></script>
-  <script src="js/app.js"></script>
+  <script src="js/slected.js"></script>
+  <script src="js/budget.js"></script>
+  
 </body>
 
 </html>
