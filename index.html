@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Top Five</title>
+  <title>PSG-V</title>
   <!-- Vanilla css -->
   <link rel="stylesheet" href="css/style.css" />
   <!-- tailwindcss  -->
@@ -14,26 +14,20 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body class=" ">
-  <header class="header-section container mx-auto  ">
+<body>
+  <header class="header-section  mx-auto  ">
     <h1 class="header-title text-5xl text-center my-16">
-      Top Five Footballer In The World
+     PSG-Top Five
     </h1>
 
-    <!-- <p class="text-center">
-      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-      <br />
-      sint. Velit officia consequat duis enim velit mollit. Exercitation
-      <br />
-      veniam consequat sunt nostrud amet.
-    </p> -->
+    
   </header>
 
   <main>
 
     <section class="container w-full mx-auto  my-12">
 
-      <div class="grid grid-cols-2 gap-8">
+      <div class="grid grid-cols-2 gap-6">
 
 
         <!-- player  -->
@@ -132,11 +126,11 @@
 
         <!-- Selected Player -->
 
-        <div class="mx-12 ">
+        <div>
 
 
-          <div class="grid grid-cols-1 w-full">
-            <h1 class="text-3xl text-center">Selected Five Players</h1>
+          <div class="grid grid-cols-1 w-full inter-font">
+            <h1 class="text-3xl  main-color">Selected-V</h1>
 
             <div class="flex flex-col w-full ">
               <div class="divider"></div>
@@ -162,12 +156,14 @@
 
           <!-- Club Budget -->
   
-          <div>
+          <div class="inter-font">
 
-            <div class="text-2xl text-center my-4">
-              <h1 class="text-3xl text-center my-8"> Club Budget</h1>
+            
+            <h1 class="text-3xl main-color"> Club Budget</h1>
+
+            <div class="flex flex-col w-full ">
+              <div class="divider"></div>
             </div>
-
 
             <div class="flex  ">
               <p class=" my-3 mx-3">Per Player</p> <input type="number" placeholder=""
@@ -191,11 +187,11 @@
             </div>
             <button id="calculate-total" class="btn btn-primary w-60 mx-24  ">Calculate- Total</button>
 
-            <div class="flex justify-between ">
+            <div class="flex w-full mx-36 ">
               <div>
                 <h1 class="my-4 mx-4 ">Total</h1>
               </div>
-              <p class="my-4 me-4 ">$<span id="total">00</span></p>
+              <div > <p class="my-4 ">$<span id="total">00</span></p></div>
             </div>
 
           </div>
@@ -205,6 +201,11 @@
     </section>
 
   </main>
+
+
+  <footer class="text-center text-stone-50  p-16  bg-stone-900 ">
+    <p>Copyright &copy; 2022 All Rights Reserved.</p>
+  </footer>
 
   <script src="js/utilities.js"></script>
   <script src="js/slected.js"></script>
